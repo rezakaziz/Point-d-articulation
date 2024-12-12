@@ -1,56 +1,56 @@
-# Point-d-articulation
+# Articulation Points
 
 ## Description
-Ce projet est un TP réalisé dans le cadre de l'apprentissage de la **programmation des graphes**. Il s'agit d'implémenter un algorithme pour trouver les **points d'articulation** d'un graphe en **C++**, en utilisant **Qt** pour l'interface utilisateur et **Graphviz** pour l'affichage visuel du graphe.
+This project is a practical assignment for learning **graph programming**. It involves implementing an algorithm to find **articulation points** in a graph using **C++**, with **Qt** for the user interface and **Graphviz** for visualizing the graph.
 
-Un **point d'articulation** est un nœud d'un graphe tel que si on le retire, le nombre de **composantes connexes** du graphe augmente.
-
----
-
-## Fonctionnalités
-- Ajout interactif des **nœuds** du graphe.
-- Ajout des **arcs** entre les nœuds.
-- Affichage visuel du graphe avec **Graphviz**.
-- Identification et mise en évidence des **points d'articulation** (colorés en vert).
+An **articulation point** is a node in a graph such that if it is removed, the number of **connected components** in the graph increases.
 
 ---
 
-## Technologies utilisées
-- **Langage** : C++
-- **Framework** : Qt
-- **Visualisation** : Graphviz
+## Features
+- Interactive addition of **nodes** to the graph.
+- Addition of **edges** between nodes.
+- Visual display of the graph using **Graphviz**.
+- Identification and highlighting of **articulation points** (colored in green).
+
+---
+
+## Technologies Used
+- **Language**: C++
+- **Framework**: Qt
+- **Visualization**: Graphviz
 
 ---
 
 ## Installation
-1. Assurez-vous d'avoir installé **Qt** et **Graphviz** sur votre machine.
-2. Clonez le projet :
+1. Ensure that **Qt** and **Graphviz** are installed on your machine.
+2. Clone the project:
    ```bash
-   git clone <lien_du_repository>
+   git clone <repository_link>
    cd Point-d-articulation
    ```
-3. Compilez le projet avec votre environnement Qt.
-4. Exécutez l'application.
+3. Compile the project using your Qt environment.
+4. Run the application.
 
 ---
 
-## Utilisation
-1. **Ajout des nœuds** : 
-   - Entrez les noms des nœuds séparés par des virgules (par exemple : `A,B,C`) ou un nœud à la fois.
-   - Cliquez sur **AddNoeud**.
-2. **Ajout des arcs** :
-   - Entrez les arcs sous la forme `N1-N2` séparés par des virgules (par exemple : `A-B,B-C`) ou un arc à la fois.
-   - Cliquez sur **AddArc**.
-3. **Génération de la solution** :
-   - Cliquez sur **Générer solution**.
-   - Le graphe s'affichera avec les **points d'articulation** colorés en vert.
+## Usage
+1. **Adding nodes**:
+   - Enter the names of the nodes separated by commas (e.g., `A,B,C`) or add one node at a time.
+   - Click **AddNoeud**.
+2. **Adding edges**:
+   - Enter edges in the form `N1-N2` separated by commas (e.g., `A-B,B-C`) or add one edge at a time.
+   - Click **AddArc**.
+3. **Generate solution**:
+   - Click **Generate Solution**.
+   - The graph will be displayed with **articulation points** highlighted in green.
 
 ---
 
-## Exemple
-### Entrée :
-- **Nœuds** : `A,B,C,D,E`
-- **Arcs** : `A-B,B-C,C-D,C-E`
+## Example
+### Input:
+- **Nodes**: `A,B,C,D,E`
+- **Edges**: `A-B,B-C,C-D,C-E`
 
-### Résultat :
-Le graphe affichera les nœuds `B` et `C` en vert, car ce sont les points d'articulation.
+### Result:
+The graph will display nodes `B` and `C` in green, as they are the articulation points.
